@@ -1,0 +1,28 @@
+.about {
+  margin: $double-margin 0;
+}
+
+.about__h2 {
+  color: $active-blue;
+  font-family: $playfair;
+  font-size: 32px;
+}
+
+.about__p {
+  font-size: 16px;
+  margin: $half-margin 0;
+}
+.about__ul {
+  color: $white;
+  list-style: none;
+  font-family: $source-sans-pro;
+}
+.about__img {
+ // border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 3px solid $teal;
+  //display: block;
+  //margin: auto;
+
+}
