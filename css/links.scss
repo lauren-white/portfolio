@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    color: $white;
+    font-family: $source-sans-pro;
+    &:hover{
+        color:$light-blue;
+        text-decoration: underline;
+    }
+}
+.cta{
+    padding:15px;
+    border:2px solid $white;
+    border-radius: 5%;
+    width: auto;
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+        border:2px solid $light-blue;
+        background-color: $teal;
+    }
+}

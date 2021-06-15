@@ -1,0 +1,17 @@
+@import  './node_modules/bootstrap/scss/bootstrap.scss';
+@import 'vars.scss';
+@import 'fonts.scss';
+@import 'links.scss';
+
+@import 'home.scss';
+
+body{
+    background-color: $dark-blue;
+}
+
+
+p{
+    color: $white;
+    font-family: $source-sans-pro;
+    font-size: 16px;
+}

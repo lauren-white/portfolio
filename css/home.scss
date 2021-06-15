@@ -1,0 +1,30 @@
+.home{
+margin: $double-margin 0;
+}
+.home__h1{
+    font-family: $source-sans-pro;
+    font-size: 20px;
+    color: $light-blue;
+}
+.home__h2{
+    color:$active-blue;
+    font-family: $playfair;
+    font-size: 100px;
+
+}
+.home__h3{
+    color: $white;
+    font-family: $playfair;
+    font-size: 40px;
+}
+
+.home__p{
+    font-size: 20px;
+    margin: $half-margin 0;
+
+}
+
+.home__cta{
+    @extend .cta;
+    margin: $triple-margin 0;
+}
