@@ -3,10 +3,12 @@
 @import 'fonts.scss';
 @import 'links.scss';
 
+@import 'header.scss';
 @import 'home.scss';
 @import 'about.scss';
 @import 'work.scss';
 @import 'contact.scss';
+@import 'footer.scss';
 
 body{
     background-color: $dark-blue;
