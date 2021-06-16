@@ -2,6 +2,7 @@ export default class StickyNav {
   constructor() {
     this.scrolling = false;
     this.lastScrollPosition = window.scrollY;
+    this.timerRunning = false;
     this.addListener();
     this.throttle();
   }
@@ -13,7 +14,7 @@ export default class StickyNav {
   }
   throttle() {
     setInterval(() => {
-      if (this.scrolling && window.scrollY > 30) {
+      if (this.scrolling) {
         this.scolling = false;
         if (window.scrollY < this.lastScrollPosition) {
           this.addSticky();
@@ -32,9 +33,15 @@ export default class StickyNav {
     }
   }
   removeSticky() {
-    let elem = document.querySelector(".header__nav");
-    if (elem.classList.contains("header__sticky")) {
-      elem.classList.remove("header__sticky");
+    if (!this.timerRunning) {
+      setTimeout(() => {
+        let elem = document.querySelector(".header__nav");
+        if (elem.classList.contains("header__sticky")) {
+          elem.classList.remove("header__sticky");
+        }
+        this.timerRunning = true
+
+      }, 5000);
     }
   }
 }
