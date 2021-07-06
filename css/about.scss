@@ -18,11 +18,15 @@
   font-family: $source-sans-pro;
 }
 .about__img {
- // border-radius: 50%;
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   border: 3px solid $teal;
   //display: block;
   //margin: auto;
-
+  @include media-breakpoint-down(md) {
+    margin: auto;
+    display: block;
+    margin-bottom: $double-margin;
+  }
 }
