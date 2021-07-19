@@ -1,0 +1,33 @@
+.sidenav {
+  display: none;
+  padding: $double-margin * 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 98;
+  height: 100%;
+  right: 0;
+  background-color: $darkest-blue;
+}
+.is-active{
+    .sidenav{
+        display: block;}
+}
+.blur{
+    overflow: hidden;
+}
+.sidenav__nav {
+}
+.sidenav__ul {
+  list-style: none;
+  //padding: 0;
+  //margin-right: $double-margin;
+  text-align: center;
+  li {
+    a {
+      margin-top: $margin;
+      margin-bottom: $margin;
+    }
+  }
+}
+

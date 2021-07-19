@@ -11,7 +11,7 @@
   list-style-type: none;
   align-items: center;
   @media only screen and (max-width: 768px) {
-    //display: inline-block;
+    display: inline-block;
   }
 }
 .header__link {
@@ -39,9 +39,9 @@
   display: none;
   @media only screen and (max-width: 768px) {
     display: block;
-    position: relative;
-    width: 40px;
-    height: 40px;
+   // position: relative;
+   // width: 40px;
+   //height: 40px;
   }
 }
 .header__mobile-nav-inner,
@@ -57,6 +57,7 @@
   transition-property: transform;
   border-radius: 4px;
   background-color: $white;
+  z-index:99;
 }
 
 .header__mobile-nav-inner {
