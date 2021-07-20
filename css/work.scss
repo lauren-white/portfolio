@@ -12,3 +12,45 @@
   font-size: 16px;
   margin: $half-margin 0;
 }
+
+.work__container {
+  margin-top: $double-margin;
+  margin-bottom: $double-margin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+.work__screenshot {
+  width: 600px;
+  height: auto;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
+  @media only screen and (max-width: 768px) {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+}
+.work__odd {
+}
+.work__right {
+  text-align: right;
+}
+.work__highlight {
+  color: $teal;
+  margin-bottom: 0;
+}
+.work__h4 {
+  color: $active-blue;
+  font-family: $playfair;
+}
+
+.work__description-container {
+  background-color: $darkest-blue;
+  padding: $margin;
+}
