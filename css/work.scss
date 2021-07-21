@@ -23,7 +23,10 @@
     display: block;
   }
 }
-.work__screenshot {
+.work__img-container {
+  z-index: 1;
+}
+.work__img {
   width: 600px;
   height: auto;
   opacity: 0.6;
@@ -37,7 +40,7 @@
   }
 }
 .work__odd {
-  order:2;
+  order: 2;
 }
 .work__right {
   text-align: right;
@@ -50,8 +53,23 @@
   color: $active-blue;
   font-family: $playfair;
 }
-
+.work__details {
+  z-index: 99;
+}
 .work__description-container {
   background-color: $darkest-blue;
   padding: $margin;
+  @include media-breakpoint-up(md) {
+    margin-left: -15%;
+  }
+}
+.work__right-side {
+  @include media-breakpoint-up(md) {
+    margin-right: -15%;
+  }
+  .work__description-container {
+    @include media-breakpoint-up(md) {
+      margin-left: 0;
+    }
+  }
 }
