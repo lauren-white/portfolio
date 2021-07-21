@@ -27,16 +27,16 @@
   z-index: 1;
 }
 .work__img {
-  width: 600px;
+  width: 450px;
   height: auto;
   opacity: 0.6;
-  &:hover {
+  &:hover, :focus{
     opacity: 1;
   }
   @media only screen and (max-width: 768px) {
     display: block;
     margin: auto;
-    width: 200px;
+    max-width: 300px;
   }
 }
 .work__odd {
@@ -46,8 +46,11 @@
   text-align: right;
 }
 .work__highlight {
-  color: $teal;
+  color: $light-blue;
   margin-bottom: 0;
+  @include media-breakpoint-down(md) {
+    margin-top: $margin;
+  }
 }
 .work__h4 {
   color: $active-blue;
