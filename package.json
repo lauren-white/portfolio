@@ -4,19 +4,20 @@
   "description": "Portfolio site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt build"
   },
   "author": "Lauren White",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.1",
+    "grunt": "^1.4.1",
+    "grunt-contrib-uglify": "^5.0.1",
     "grunt-sass": "^3.1.0",
     "node-sass": "^6.0.0",
     "sass": "^1.34.1"
   },
   "devDependencies": {
-    "grunt": "^1.4.1",
-    "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0"
   }
 }

@@ -3,3 +3,4 @@ package-lock.json
 css/main.css
 css/main.css.map
 .DS_Store
+dist
