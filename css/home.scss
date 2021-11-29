@@ -1,31 +1,100 @@
-.home{
-margin: $double-margin 0;
-}
-.home__h1{
-    font-family: $source-sans-pro;
-    font-size: 20px;
-    color: $light-blue;
-    margin-top: $double-margin;
-}
-.home__h2{
-    color:$active-blue;
-    font-family: $playfair;
-    font-size: 100px;
-
-}
-.home__h3{
-    color: $white;
-    font-family: $playfair;
-    font-size: 40px;
+@keyframes darkToWhite {
+  0%   {color: $darkest-blue; left:0px; top:0px;}
+  25%  {color:$darkest-blue; left:200px; top:0px;}
+  50%  {color:$light-blue; left:200px; top:200px;}
+  75%  {color:$white; left:0px; top:200px;}
+  100% {color: $white; left:0px; top:0px;}
 }
 
-.home__p{
-    font-size: 20px;
-    margin: $half-margin 0;
+@keyframes darkToActiveBlue {
+  0%   {color: $darkest-blue; left:0px; top:0px;}
+  25%  {color:$darkest-blue; left:200px; top:0px;}
+  50%  {color:$active-blue; left:200px; top:200px;}
+  75%  {color:$active-blue; left:0px; top:200px;}
+  100% {color:$active-blue; left:0px; top:0px;}
+}
+.home {
+  margin: $double-margin 0;
+}
+.home__h1 {
+  font-family: $source-sans-pro;
+  font-size: 20px;
+  color: $light-blue;
+  margin-top: $double-margin;
+
+  // transition-delay: 1s;
+  // transition-property: transform;
+  // transition-timing-function: ease-in;
+  // transition-duration: 1s;
+  // transform: translate(0px, -10px);
+
+  animation-name: darkToActiveBlue;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+}
+.home__h2 {
+  color: $active-blue;
+  font-family: $playfair;
+  font-size: 100px;
+  transition-property: transform;
+
+  // transition-delay: 2s;
+  // transition-property: transform;
+  // transition-timing-function: ease-in;
+  // transition-duration: 1s;
+  // transform: translate(0px, -10px);
+
+  animation-name: darkToActiveBlue;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+}
+.home__h3 {
+  color: $white;
+  font-family: $playfair;
+  font-size: 40px;
+
+  // transition-delay: 900ms;
+  // transition-property: transform;
+  // transition-timing-function: ease-in;
+  // transition-duration: 1s;
+  // transform: translate(0px, -10px);
+
+
+  animation-name: darkToWhite;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
 
 }
 
-.home__cta{
-    @extend .cta;
-    margin: $triple-margin 0;
+
+
+.home__p {
+  font-size: 20px;
+  margin: $half-margin 0;
+
+  // transition-delay: 2s;
+  // transition-property: transform;
+  // transition-timing-function: ease-in;
+  // transition-duration: 2ss;
+  // transform: translate(0px, -10px);
+
+  animation-name: darkToWhite;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: ease-in-out;
+
+}
+
+.home__cta {
+  @extend .cta;
+  margin: $triple-margin 0;
+
+  // transition-delay: 500ms;
+  // transition-property: transform;
+  // transition-timing-function: ease-in;
+  // transition-duration: .2s;
+  // transform: translate(0px, -10px);
 }
