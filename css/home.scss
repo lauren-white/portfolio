@@ -22,11 +22,11 @@
   color: $light-blue;
   margin-top: $double-margin;
 
-  // transition-delay: 1s;
-  // transition-property: transform;
-  // transition-timing-function: ease-in;
-  // transition-duration: 1s;
-  // transform: translate(0px, -10px);
+  transition-delay: 1s;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transform: translate(0px, -10px);
 
   animation-name: darkToActiveBlue;
   animation-duration: 2s;
@@ -39,11 +39,11 @@
   font-size: 100px;
   transition-property: transform;
 
-  // transition-delay: 2s;
-  // transition-property: transform;
-  // transition-timing-function: ease-in;
-  // transition-duration: 1s;
-  // transform: translate(0px, -10px);
+  transition-delay: 1s;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+  transform: translate(0px, -10px);
 
   animation-name: darkToActiveBlue;
   animation-duration: 3s;
