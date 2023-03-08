@@ -11,6 +11,10 @@
   padding:5px 10px;
   margin-top: 5px;
   display: inline-block;
+  &:hover{
+    color: $active-blue;
+    border: 2px solid $active-blue;
+  }
 }
 .header_nav {
   display: flex;
@@ -21,6 +25,14 @@
   flex-direction: row;
   list-style-type: none;
   align-items: center;
+  li{
+    color:green;
+    transition-delay: 1s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+    transform: translate(0px, -10px);
+  }
   @media only screen and (max-width: 768px) {
     display: inline-block;
   }
@@ -104,6 +116,5 @@
   width: 100%;
   background-color: $dark-blue;
   transition: transform 500ms ease;
-  //transform: translateY(5%);
   z-index: 100;
 }
